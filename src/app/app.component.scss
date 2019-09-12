@@ -1,4 +1,17 @@
 :host {
   text-align: center;
   padding: 60px;
+
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 40px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: #24c157;
+    color: #0D355A;
+    font-size: 22px;
+  }
 }
