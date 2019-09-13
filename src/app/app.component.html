@@ -1,4 +1,15 @@
-<button (click)="show = !show">TOGGLE</button>
+<button (click)="show = !show">Toggle title</button>
 <h1 *ngIf="show" @fadeAnimation>NG Animations</h1>
+
+<div class="btn-group">
+  <button (click)="removeItem()" class="remove">Remove</button>
+  <button (click)="toggleList()">Toggle list</button>
+  <button (click)="addItem()" class="add">Add</button>
+</div>
+<ul [@listAnimation]="items.length" class="items">
+  <li *ngFor="let item of items" class="item">
+    Item {{item}}
+  </li>
+</ul>
 
 <router-outlet></router-outlet>
