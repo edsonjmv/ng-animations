@@ -12,4 +12,9 @@
   </li>
 </ul>
 
+<button (click)="toggleImages()">Toggle images</button>
+<section [@listAnimation]="images.length" class="images">
+  <img *ngFor="let img of images" [src]="img" class="image" />
+</section>
+
 <router-outlet></router-outlet>
